@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { loginSuccess } from "../features/auth/authSlice";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "../styles/global.css";
 
 function LoginPage() {
@@ -65,7 +65,10 @@ function LoginPage() {
           </button>
 
           <p className="signup-text">
-            Don’t have an account? <span>Sign up</span>
+            Don’t have an account?{" "}
+            <Link to="/signup">
+              <span>Sign up</span>
+            </Link>
           </p>
         </form>
       </div>

@@ -2,6 +2,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 import LoginPage from "../pages/LoginPage";
+import SignupPage from "../pages/SignupPage";
 import HomeDashboard from "../pages/HomeDashboard";
 import BotStatusPage from "../pages/BotStatusPage";
 import TaskAllocationPage from "../pages/TaskAllocationPage";
@@ -14,10 +15,11 @@ function AppRouter() {
 
   return (
     <Routes>
-      {/* Public */}
+      {/* ✅ Public Routes */}
       <Route path="/" element={<LoginPage />} />
+      <Route path="/signup" element={<SignupPage />} />
 
-      {/* Protected */}
+      {/* ✅ Protected Routes */}
       <Route
         path="/home"
         element={isAuthenticated ? <HomeDashboard /> : <Navigate to="/" />}
