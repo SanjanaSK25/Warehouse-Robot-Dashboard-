@@ -132,5 +132,3 @@ Benefits:
 **SanjanaSK25
 GitHub: https://github.com/SanjanaSK25
 
-Login Screen :- ![Uploading image.png…]()
-
